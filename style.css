@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  background-color: aqua;
+  font-family: "Roboto";
+  overflow: hidden;
+}
+
+#game_container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background: url(assets/1137443.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#bird {
+  width: 61px;
+  height: 45px;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 40%;
+  background: url(assets/5476-cursed-bird-stare.png);
+  background-size: cover;
+
+  transform-origin: center;
+  transition: transform 0.1s linear;
+}
+
+#score {
+  z-index: 2;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  font-size: 24;
+  font-family: "Roboto";
+}
+
+#start-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  border-radius: 10px;
+  border-color: transparent;
+  background-color: rgb(0, 196, 0);
+}
+
+#start-btn:hover {
+  background-color: rgb(0, 159, 0);
+  transition: ease-in;
+}
+
+.pipe {
+  position: absolute;
+  width: 100px;
+  background-color: rgb(0, 200, 30);
+}
+
+.top_pipe {
+  top: 0;
+  border-bottom: 10px solid rgb(0, 200, 30);
+}
+
+.bottom_pipe {
+  border-top: 10px solid rgb(0, 200, 30);
+}
+
+#difficulty-select {
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+}

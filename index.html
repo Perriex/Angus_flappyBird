@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Flappy Bird</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&amp;display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="game_container">
+      <div id="bird"></div>
+      <div id="score"></div>
+    </div>
+    <button id="start-btn" onclick="onStartButtonClick()">Start Game</button>
+<button id="mute-btn">Mute Music</button>
+    <select id="difficulty-select">
+      <option value="easy">Easy</option>
+      <option value="medium">Medium</option>
+      <option value="hard">Hard</option>
+    </select>
+  </body>
+</html>
